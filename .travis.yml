@@ -7,4 +7,4 @@ jdk:
 
 install: mvn -B -X -e install -U -DskipTests=true
 
-script: mvn -B -X -e verify -U -Dmaven.javadoc.skip=true
+script: mvn -B -X -e verify -U -Dmaven.javadoc.skip=true -Dtest=ClassPathTest -DfailIfNoTests=false
